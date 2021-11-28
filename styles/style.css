@@ -1,0 +1,100 @@
+@import url(/styles/colors.css);
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Roboto Slab', serif;
+    background: var(--main-bg-color);
+    color: var(--main-color);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+button {
+    border-radius: 0.2rem;
+    font-family: 'Roboto Slab', serif;
+    background: var(--main-bg-color);
+    border: none;
+    cursor: pointer;
+    color: var(--main-color);
+    padding: 0.5rem;
+}
+
+button a {
+    text-decoration: none;
+    color: var(--main-color)
+}
+
+
+button:hover {
+    background: var(--main-color);
+    color: var(--main-bg-color);
+}
+
+button:hover a{
+    color: var(--main-bg-color);
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.left {
+    padding: 1rem;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.dp {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    background-color: #fff;
+    background-image: url(/assets/images/dp-square.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 0.8;
+}
+
+.right {
+    padding: 1rem;
+    padding-left: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+}
+
+.info {
+    grid-row-start: 2;
+    font-size: 0.9rem;
+}
+
+.name .pn {
+    font-size: 1.5rem;
+}
