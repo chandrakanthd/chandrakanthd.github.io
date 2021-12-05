@@ -1,4 +1,9 @@
 :root {
     --main-bg-color: #191919;
     --main-color: grey;
+    --about-bg-color: rgb(43, 43, 43);
+    --header-underline : rgb(17, 171, 176);
+    --section-border: rgb(232, 232, 232);
+    --white: white;
+    --black: black;
 }

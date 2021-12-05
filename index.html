@@ -10,41 +10,192 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/beb337d726.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-
     <div class="container">
-        <div class="left">
-            <div class="dp"> </div>
-            <div class="contact">
-                <button>
-                    <a href="/assets/docs/resume.pdf" target="_blank">
-                        My Resume
-                    </a>
-                </button>
-                <button>
-                    <a href="https://www.linkedin.com/in/chandrakanthd" target="_blank">
-                        LinkedIn
-                    </a>
-                </button>
+
+        <section class="landing" id="landing">
+            <div class="content">
+                <h1>Hi, I'm Chandra Kanth</h1>
+                <p>
+                    I'm a Software Engineer, Full Stack Web Developer and DevOps Engineer creating awesome, cutting-edge
+                    and
+                    robust applications. Let's start scrolling and know more about me.
+                </p>
+                <div class="icons">
+                    <span>
+                        <a href="https://www.linkedin.com/in/chandrakanthd" target="_blank" title="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </span>
+                    <span><i class="far fa-envelope" title="chandrakanth.dc@gmail.com" onclick="copyMail()"></i></span>
+                    <span><i class="fas fa-phone" title="+91 97899 38946" onclick="copyPhone()"></i></span>
+                    <span>
+                        <a href="/assets/docs/resume.pdf" target="_blank" title="Resume">
+                            <i class="fas fa-download"></i>
+                        </a>
+                    </span>
+                </div>
             </div>
+            <div class="godown">
+                <a href="#aboutme">
+                    <i class="fas fa-chevron-circle-down"></i>
+                </a>
+            </div>
+        </section>
+
+
+        <section class="about" id="aboutme">
+
+            <div class="row">
+                <div class="dp">
+                    <img src="/assets/images/dp-square.jpg" alt="profile">
+                </div>
+
+                <div class="body">
+                    <div class="aboutme">
+                        <h3>About Me</h3>
+                        <p>
+                            I'm a Software Engineer with 3+ years experience in web application development. My focus as
+                            a
+                            full
+                            stack web developer has been to build innovative and cutting-edge solutions. I've worked on
+                            projects
+                            in
+                            various domains like OTT, IPTV, Content Delivery and Media Services.
+                        </p>
+                        <p>
+                            Outside of work, you'll find me roller skating and playing badminton.
+                            I focus on keeping
+                            myself fit and healthy. I also enjoy playing video games. At home, I'm also
+                            known for taking impromptu naps :)
+                        </p>
+                    </div>
+
+                    <div class="contact">
+                        <h3>Contact Details</h3>
+                        <p>
+                            <span>Chandra Kanth</span>
+                            <br>
+                            <span>+91 97899 38946</span>
+                            <br>
+                            <span>chandrakanth.dc@gmail.com</span>
+                            <br>
+                            <span>Bengaluru, Karnataka</span>
+                        </p>
+                    </div>
+
+                    <div class="download">
+                        <a href="/assets/docs/resume.pdf" target="_blank">
+                            <i class="fas fa-download point"></i>
+                            Resume</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="education">
+            <div class="header">
+                <h2>Education</h2>
+            </div>
+            <div class="body">
+                <div class="block">
+                    <h3>IIT Madras, Chennai</h3>
+                    <p>B.Tech in Computer Science and Engineering
+                        <span>.</span> 2018
+                    </p>
+                    <p>I've completed my Bachelor's Degree in CSE from Indian Institute of Technology Madras, Chennai in
+                        2018.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="work">
+            <div class="header">
+                <h2>Work</h2>
+            </div>
+            <div class="body">
+                <div class="block">
+                    <h3>Onnet Systems India, Bengaluru</h3>
+                    <p>Software Engineer
+                        <span>.</span>
+                        2018 - present
+                    </p>
+                    <ul>
+                        <li>Engineered modern cloud solutions with full consideration for stability and robustness</li>
+                        <li>Involved in full lifecycle of product development</li>
+                        <li>Built multiple projects for clients in media domain</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="skills">
+            <div class="header">
+                <h2>Skills</h2>
+            </div>
+            <div class="body">
+                <div class="block">
+                    <h3>Front End Technologies</h3>
+                    <p>Angular <span>.</span> TypeScript <span>.</span> JavaScript
+                        <span>.</span> Node.js <span>.</span> HTML <span>.</span> CSS
+                    </p>
+                </div>
+                <div class="block">
+                    <h3>Back End Technologies</h3>
+                    <p>Spring Boot <span>.</span> Java <span>.</span> MongoDB <span>.</span>
+                        MySQL <span>.</span> Keycloak <span>.</span> Node.js <span>.</span> Express
+                    </p>
+                </div>
+                <div class="block">
+                    <h3>DevOps</h3>
+                    <p>Git <span>.</span> Docker <span>.</span> AWS <span>.</span> Nginx</p>
+                </div>
+            </div>
+        </section>
+
+
+        <footer>
+            <div class="goup">
+                <a href="#landing">
+                    <i class="fas fa-chevron-circle-up"></i>
+                </a>
+            </div>
+            <span>Created @ 2021</span>
+            <span>Designed by Chandra Kanth</span>
+
+        </footer>
+
+        <div class="snack" id="snack">
+            Copied to clipboard
         </div>
-        <div class="right">
-            <div class="name">
-                <p class="pn">Hi, I'm Chandra Kanth,</p>
-                <p>a Software Engineer </p>
-            </div>
-            <div class="info">
-                <button>
-                    <a href="/contact.html">
-                        My Contact
-                    </a>
-                </button>
-            </div>
-        </div>
+
     </div>
 
+    <script>
+        function copyPhone() {
+            navigator.clipboard.writeText('+919789938946');
+            snack();
+        }
+        function copyMail() {
+            navigator.clipboard.writeText('chandrakanth.dc@gmail.com');
+            snack();
+        }
+
+        function snack() {
+            let snack = document.getElementById('snack');
+            snack.classList.add('snackshow');
+            setTimeout(() => {
+                snack.classList.remove('snackshow');
+            }, 1000);
+        }
+    </script>
 </body>
 
 </html>

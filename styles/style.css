@@ -2,99 +2,292 @@
 
 html,
 body {
-    padding: 0;
-    margin: 0;
-}
-
-body {
-    width: 100vw;
-    height: 100vh;
-    font-family: 'Roboto Slab', serif;
-    background: var(--main-bg-color);
-    color: var(--main-color);
+    padding: 0px;
+    margin: 0px;
 }
 
 * {
     box-sizing: border-box;
 }
 
-button {
-    border-radius: 0.2rem;
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    /* height: 100vh; */
     font-family: 'Roboto Slab', serif;
-    background: var(--main-bg-color);
-    border: none;
-    cursor: pointer;
     color: var(--main-color);
-    padding: 0.5rem;
-}
-
-button a {
-    text-decoration: none;
-    color: var(--main-color)
-}
-
-
-button:hover {
-    background: var(--main-color);
-    color: var(--main-bg-color);
-}
-
-button:hover a{
-    color: var(--main-bg-color);
-}
-
-.container {
-    height: 100%;
-    width: 100%;
-    padding: 1rem;
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-}
-
-.left {
-    padding: 1rem;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    justify-items: center;
-    align-items: center;
-}
-
-.contact {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-
-.dp {
-    width: 10rem;
-    height: 10rem;
-    border-radius: 50%;
-    background-color: #fff;
-    background-image: url(/assets/images/dp-square.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    opacity: 0.8;
-}
-
-.right {
-    padding: 1rem;
-    padding-left: 3rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    text-align: center;
-    align-items: center;
-    justify-items: center;
-    padding-bottom: 1rem;
-    padding-left: 2rem;
-}
-
-.info {
-    grid-row-start: 2;
+    line-height: 1.8rem;
     font-size: 0.9rem;
 }
 
-.name .pn {
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.landing {
+    width: 100%;
+    height: 100vh;
+    background: url('/assets/images/bg-red.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: var(--white);
+}
+
+.landing .content {
+    font-size: 1.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.landing h1 {
+    font-size: 4rem;
+}
+
+.landing p {
+    text-align: center;
+    max-width: 60%;
+    font-size: 1.2rem;
+}
+
+.landing i {
+    cursor: pointer;
+}
+
+.icons span {
+    padding: 1rem
+}
+
+.landing i:hover {
+    color: var(--header-underline);
+}
+
+.icons a {
+    color: inherit;
+    /* blue colors for links too */
+    text-decoration: inherit;
+    /* no underline */
+}
+
+.godown a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.landing .godown {
+    margin-top: 7rem;
+    font-size: 2.5rem;
+}
+
+.about {
+    width: 100%;
+    background: var(--about-bg-color);
+}
+
+.about .row {
+    display: grid;
+    width: 80%;
+    grid-template-columns: 1fr 3fr;
+    gap: 2rem;
+    padding: 5rem 0;
+    margin: auto;
+}
+
+.dp {
+    text-align: center;
+}
+
+.dp img {
+    width: 120px;
+    border-radius: 50%;
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.about .body {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "A A"
+        "B C";
+    gap: 0.5rem;
+    padding-left: 4rem;
+}
+
+.about h3 {
+    color: var(--white);
+}
+
+.aboutme {
+    grid-area: A;
+}
+
+.contact {
+    grid-area: B;
+}
+
+.download {
+    grid-area: C;
+    text-align: center;
+}
+
+.download a {
+    background: var(--main-color);
+    color: var(--white);
+    display: block;
+    margin: auto;
+    margin-top: 2rem;
+    text-align: center;
+    width: 70%;
+    border-radius: 3px;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.7rem;
+}
+
+.download a:hover {
+    color: var(--black);
+    background: var(--white);
+}
+
+.download i {
     font-size: 1.5rem;
+    padding: 0 20px 0 0;
+}
+
+.education {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 1rem;
+    border-bottom: 1px solid var(--section-border);
+    padding: 6rem 0 3rem 0;
+}
+
+.education .header {
+    text-align: center;
+}
+
+.education .body {
+    padding-left: 4rem;
+    max-width: 80%;
+}
+
+.education h2 {
+    color: var(--black);
+}
+
+.education h3 {
+    color: var(--black);
+}
+
+.work {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 1rem;
+    border-bottom: 1px solid var(--section-border);
+    padding: 3rem 0;
+}
+
+.work .header {
+    text-align: center;
+}
+
+.work .body {
+    padding-left: 4rem;
+    max-width: 80%;
+}
+
+.work h2 {
+    color: var(--black);
+}
+
+.work h3 {
+    color: var(--black);
+}
+
+.skills {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 1rem;
+    border-bottom: 1px solid var(--section-border);
+    padding: 3rem 0 6rem 0;
+}
+
+.skills .header {
+    text-align: center;
+}
+
+.skills .body {
+    padding-left: 4rem;
+    max-width: 80%;
+}
+
+.skills h2 {
+    color: var(--black);
+}
+
+.skills h3 {
+    color: var(--black);
+}
+
+.header h2 {
+    text-decoration: underline;
+    text-decoration-color: var(--header-underline);
+    text-decoration-thickness: 3px;
+    text-underline-offset: 0.5rem;
+}
+
+footer {
+    position: relative;
+    padding: 2rem 0 1rem 0;
+    font-size: 0.7rem;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    background: var(--about-bg-color);
+}
+
+.goup {
+    position: absolute;
+    left: 50%;
+    top: -70%;
+    font-size: 3rem;
+}
+
+.goup a {
+    color: var(--about-bg-color);
+}
+
+.goup i:hover {
+    color: var(--header-underline);
+}
+
+.snack {
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+    padding: 0.3rem 0.4rem;
+    background: var(--black);
+    transform: translateX(-50%);
+    visibility: hidden;
+}
+
+.snackshow {
+    visibility: visible;
 }
